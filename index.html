@@ -3,8 +3,120 @@
   <head>
     <meta charset="utf-8">
     <title>Our Story</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
+
+    <header>
+      <!-- Use this to style the landing page? http://getbootstrap.com/components/#jumbotron) -->
+      <div id="landingPage">
+        <h1>Our Story</h1>
+      </div>
+    </header>
+
+    <!-- Create a nav bar that's fixed to the top of the page (http://getbootstrap.com/components/#navbar-fixed-top)
+    Each link will let you jump to the relevant part of the page
+    (not visible when on the landing page) -->
+    <navclass="navbar navbar-default navbar-fixed-top">
+      <ul>
+       <li><a href="#about">About</a></li>
+       <li><a href="#stories">Stories</a></li>
+       <li><a href="#facts">Facts</a></li>
+       <li><a href="#resources">Resources</a></li>
+       <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="about">
+      <h2>About</h2>
+      <div class="row">
+        <p class="introduction">Here's an introduction about us.</p>
+      </div>
+    </div>
+
+    <div class="container" id="stories">
+      <h2>Stories</h2>
+      <!-- Create a profile for each person, including their photo and their story -->
+      <div class="row" id="firstStory">
+        <img class="profile" src="images/placeholder.jpg" />
+        <p class="story">Here's this person's story.</p>
+      </div>
+
+      <div class="row" id="secondStory">
+        <img class="profile" src="images/placeholder.jpg" />
+        <p class="story">Here's this person's story.</p>
+      </div>
+
+      <div class="row" id="thirdStory">
+        <img class="profile" src="images/placeholder.jpg" />
+        <p class="story">Here's this person's story.</p>
+      </div>
+
+      <div class="row" id="fourthStory">
+        <img class="profile" src="images/placeholder.jpg" />
+        <p class="story">Here's this person's story.</p>
+      </div>
+    </div> <!-- Closing the Stories div -->
+
+    <div class="container" id="facts">
+      <h2>Stories</h2>
+      <!-- Create a profile for each person, including their photo and their story -->
+      <div class="row" id="firstFact">
+        <p class="perception">Here's a common perception about immigrants.</p>
+        <!-- Add TRUE / FALSE buttons -->
+      </div>
+
+      <div class="row" id="secondFact">
+        <p class="perception">Here's a common perception about immigrants.</p>
+        <!-- Add TRUE / FALSE buttons -->
+      </div>
+
+      <div class="row" id="thirdFact">
+        <p class="perception">Here's a common perception about immigrants.</p>
+        <!-- Add TRUE / FALSE buttons -->
+      </div>
+
+      <div class="row" id="fourthFact">
+        <p class="perception">Here's a common perception about immigrants.</p>
+        <!-- Add TRUE / FALSE buttons -->
+      </div>
+    </div> <!-- Closing the Facts div -->
+
+    <div class="container" id="resources">
+      <h2>Resources</h2>
+      <div class="row">
+        <!-- Create a list of resources -->
+        <ul>
+          <li>Resource</li>
+          <li>Resource</li>
+          <li>Resource</li>
+          <li>Resource</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container" id="contact">
+      <h2>Contact</h2>
+      <div class="row">
+        <!-- Include social buttons here -->
+        <h3>Follow us on social media!</h3>
+        <div class="icons">
+          <!-- Add social media buttons here -->
+        </div>
+        <!-- Create a contact form (http://getbootstrap.com/components/#navbar-forms) -->
+        <form class="navbar-form navbar-left" role="search">
+          <h3>Send us a message!</h3>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your message here">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      This page was created by Elizabeth Jegede and Madeleine Linder
+    </footer>
 
   </body>
 </html>
