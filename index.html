@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <title>Our Story</title>
@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  
+
   <body>
-    
+
     <header>
       <!-- Use this to style the landing page? http://getbootstrap.com/components/#jumbotron) -->
       <div id="landingPage" class="jumbotron">
         <h1 id="title">Our Story</h1>
       </div>
     </header>
-    
+
     <nav class="navbar navbar-default" id="navbar_ex">
       <div class="container-fluid navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
+          <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">Our Story</a>
       </div>
@@ -40,7 +40,7 @@
     </nav>
 
   <div class="main">
-	
+
     <div class="container" id="about">
       <h2>About Us</h2>
       <div class="row">
@@ -76,22 +76,30 @@
       <h2>Common myths de-mystified</h2>
       <div class="row" id="firstFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons -->
+        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
+        <button type="button" class="btn btn-success true correct">True</button>
+        <button type="button" class="btn btn-danger false incorrect">False</button>
       </div>
 
       <div class="row" id="secondFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons -->
+        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
+        <button type="button" class="btn btn-success true incorrect">True</button>
+        <button type="button" class="btn btn-danger false correct">False</button>
       </div>
 
       <div class="row" id="thirdFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons -->
+        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
+        <button type="button" class="btn btn-success true correct">True</button>
+        <button type="button" class="btn btn-danger false incorrect">False</button>
       </div>
 
       <div class="row" id="fourthFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons -->
+        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
+        <button type="button" class="btn btn-success true incorrect">True</button>
+        <button type="button" class="btn btn-danger false correct">False</button>
       </div>
     </div> <!-- Closing the Facts div -->
 
@@ -172,10 +180,17 @@
       </div> <!-- Closing the Contact div -->
 
     </div> <!-- Closing the Main tag -->
-    
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwk0E3kvw5gBTvv4N_QspeQZ5ZQRWwgkE_5dzdzYqJ8g9wKA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
     <footer>
       This page was created by Elizabeth Jegede and Madeleine Linder
     </footer>
+
+    <!-- Link to the jQuery library and our jQuery code
+    Note that the jQuery library needs to be linked before our code, so that our code can use the library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
   </body>
 </html>
