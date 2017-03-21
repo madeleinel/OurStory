@@ -77,30 +77,57 @@
       <div class="row" id="firstFact">
         <p class="perception">Here's a common perception about immigrants.</p>
         <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success true correct">True</button>
-        <button type="button" class="btn btn-danger false incorrect">False</button>
+        <button type="button" class="btn btn-success choice true correct">True</button>
+        <button type="button" class="btn btn-danger choice false incorrect">False</button>
       </div>
 
       <div class="row" id="secondFact">
         <p class="perception">Here's a common perception about immigrants.</p>
         <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success true incorrect">True</button>
-        <button type="button" class="btn btn-danger false correct">False</button>
+        <button type="button" class="btn btn-success choice true incorrect">True</button>
+        <button type="button" class="btn btn-danger choice false correct">False</button>
       </div>
 
       <div class="row" id="thirdFact">
         <p class="perception">Here's a common perception about immigrants.</p>
         <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success true correct">True</button>
-        <button type="button" class="btn btn-danger false incorrect">False</button>
+        <button type="button" class="btn btn-success choice true correct">True</button>
+        <button type="button" class="btn btn-danger choice false incorrect">False</button>
       </div>
 
       <div class="row" id="fourthFact">
         <p class="perception">Here's a common perception about immigrants.</p>
         <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success true incorrect">True</button>
-        <button type="button" class="btn btn-danger false correct">False</button>
+        <button type="button" class="btn btn-success choice true incorrect">True</button>
+        <button type="button" class="btn btn-danger choice false correct">False</button>
       </div>
+
+      <!-- Create a pop-up window to display after the user clicks on true or False -->
+      <div class="row" id="popup">
+
+        <!-- Set up different parts to be called upon depending on whether they chose correctly or not -->
+        <div id="correct"> <!-- To display if the user chose correctly -->
+          <h3>You chose correctly!</h3>
+        </div>
+        <div id="incorrect"> <!-- To display if the user chose incorrectly -->
+          <h3>You chose incorrectly!</h3>
+        </div>
+
+        <!-- Set up different information parts, to provide more information about the relevant fact -->
+        <div class="factMore" id="firstFactMore"> <!-- To display when the user has submitted their choice for the first fact -->
+          <p>More info about the first fact.</p>
+        </div>
+        <div class="factMore" id="secondFactMore"> <!-- To display when the user has submitted their choice for the second fact -->
+          <p>More info about the second fact.</p>
+        </div>
+        <div class="factMore" id="thirdFactMore"> <!-- To display when the user has submitted their choice for the third fact -->
+          <p>More info about the third fact.</p>
+        </div>
+        <div class="factMore" id="fourthFactMore"> <!-- To display when the user has submitted their choice for the fourth fact -->
+          <p>More info about the fourth fact.</p>
+        </div>
+      </div> <!-- Closing the pop-up window div -->
+
     </div> <!-- Closing the Facts div -->
 
     <div class="container" id="resources">
