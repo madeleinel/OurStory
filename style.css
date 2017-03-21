@@ -54,3 +54,16 @@
 	height: 200px;
 	width: 50px;
 }
+
+/* Set the pop-up window (and all of it's parts) to be hidden by default */
+#popup, #correct, #incorrect, .factMore {
+  display: none;
+
+  /* Make the pop-up window be fixed to the middle of the screen when it is displayed */
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+}
