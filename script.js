@@ -8,7 +8,7 @@ $(".choice").on("click", function() {
   console.log("clicked"); // This line is to check that the button click is being registered by the browser
 
   // When click on any of the True/False buttons: Display the pop-up window (id "popup")
-  // $("#popup").css({"display": "block;"});
+  $("#popup").
 });
 
 // When click on the correct option: Display "success" text
