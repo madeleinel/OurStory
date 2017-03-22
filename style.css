@@ -50,15 +50,28 @@
   margin: 5px 2px;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border: 50%;
+}
+
+.fa-twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
 .message {
 	height: 200px;
 	width: 50px;
 }
 
 /* Set the pop-up window (and all of it's parts) to be hidden by default */
-#popup, #correct, #incorrect, .factMore {
-  display: none;
-
+.popup {
+  /*display: none;*/
   /* Make the pop-up window be fixed to the middle of the screen when it is displayed */
   position: fixed;
   top: 25%;

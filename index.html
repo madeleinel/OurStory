@@ -2,8 +2,9 @@
 <html>
 
   <head>
-    <meta charset="utf-8">
     <title>Our Story</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -77,56 +78,70 @@
       <div class="row" id="firstFact">
         <p class="perception">Here's a common perception about immigrants.</p>
         <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success choice true correct">True</button>
-        <button type="button" class="btn btn-danger choice false incorrect">False</button>
+        <button type="button" class="btn btn-success" id="firstCorrectChoice">True</button>
+        <button type="button" class="btn btn-danger" id="firstIncorrectChoice">False</button>
       </div>
 
       <div class="row" id="secondFact">
         <p class="perception">Here's a common perception about immigrants.</p>
         <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success choice true incorrect">True</button>
-        <button type="button" class="btn btn-danger choice false correct">False</button>
+        <button type="button" class="btn btn-success" id="secondCorrectChoice">True</button>
+        <button type="button" class="btn btn-danger" id="secondIncorrectChoice">False</button>
       </div>
 
       <div class="row" id="thirdFact">
         <p class="perception">Here's a common perception about immigrants.</p>
         <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success choice true correct">True</button>
-        <button type="button" class="btn btn-danger choice false incorrect">False</button>
+        <button type="button" class="btn btn-success" id="thirdCorrectChoice">True</button>
+        <button type="button" class="btn btn-danger" id="thirdIncorrectChoice">False</button>
       </div>
 
       <div class="row" id="fourthFact">
         <p class="perception">Here's a common perception about immigrants.</p>
         <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success choice true incorrect">True</button>
-        <button type="button" class="btn btn-danger choice false correct">False</button>
+        <button type="button" class="btn btn-success" id="fourthCorrectChoice">True</button>
+        <button type="button" class="btn btn-danger" id="fourthIncorrectChoice">False</button>
       </div>
 
       <!-- Create a pop-up window to display after the user clicks on true or False -->
-      <div class="row" id="popup">
+      <div class="row popup" id="firstCorrect">
+        <h3>You chose correctly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
 
-        <!-- Set up different parts to be called upon depending on whether they chose correctly or not -->
-        <div id="correct"> <!-- To display if the user chose correctly -->
-          <h3>You chose correctly!</h3>
-        </div>
-        <div id="incorrect"> <!-- To display if the user chose incorrectly -->
-          <h3>You chose incorrectly!</h3>
-        </div>
-
-        <!-- Set up different information parts, to provide more information about the relevant fact -->
-        <div class="factMore" id="firstFactMore"> <!-- To display when the user has submitted their choice for the first fact -->
-          <p>More info about the first fact.</p>
-        </div>
-        <div class="factMore" id="secondFactMore"> <!-- To display when the user has submitted their choice for the second fact -->
-          <p>More info about the second fact.</p>
-        </div>
-        <div class="factMore" id="thirdFactMore"> <!-- To display when the user has submitted their choice for the third fact -->
-          <p>More info about the third fact.</p>
-        </div>
-        <div class="factMore" id="fourthFactMore"> <!-- To display when the user has submitted their choice for the fourth fact -->
-          <p>More info about the fourth fact.</p>
-        </div>
-      </div> <!-- Closing the pop-up window div -->
+      <div class="row popup" id="firstCorrect">
+        <h3>You chose correctly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
+      <div class="row popup" id="firstIncorrect">
+        <h3>You chose incorrectly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
+      <div class="row popup" id="secondCorrect">
+        <h3>You chose correctly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
+      <div class="row popup" id="secondIncorrect">
+        <h3>You chose incorrectly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
+      <div class="row popup" id="thirdCorrect">
+        <h3>You chose correctly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
+      <div class="row popup" id="thirdIncorrect">
+        <h3>You chose incorrectly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
+      <div class="row popup" id="fourthCorrect">
+        <h3>You chose correctly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
+      <div class="row popup" id="fourthIncorrect">
+        <h3>You chose incorrectly!</h3>
+        <p>More info about the first fact.</p>
+      </div>
+      <!-- Done setting up pop-up windows -->
 
     </div> <!-- Closing the Facts div -->
 
@@ -207,8 +222,6 @@
       </div> <!-- Closing the Contact div -->
 
     </div> <!-- Closing the Main tag -->
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwk0E3kvw5gBTvv4N_QspeQZ5ZQRWwgkE_5dzdzYqJ8g9wKA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
     <footer>
       This page was created by Elizabeth Jegede and Madeleine Linder
