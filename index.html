@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Our Story</title>
+    <title>Our Story</title>ß
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -77,69 +77,108 @@
       <h2>Common myths de-mystified</h2>
       <div class="row" id="firstFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success" id="firstCorrectChoice">True</button>
-        <button type="button" class="btn btn-danger" id="firstIncorrectChoice">False</button>
+        <!-- Each "fact" has TRUE / FALSE buttons > The button id's indicate whether it's the correct choice or not -->
+        <button type="button" class="btn btn-success choice" id="btn-first-correct">True</button>
+        <button type="button" class="btn btn-danger choice" id="btn-first-incorrect">False</button>
       </div>
 
       <div class="row" id="secondFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success" id="secondCorrectChoice">True</button>
-        <button type="button" class="btn btn-danger" id="secondIncorrectChoice">False</button>
+        <button type="button" class="btn btn-success choice" id="btn-second-correct">True</button>
+        <button type="button" class="btn btn-danger choice" id="btn-second-incorrect">False</button>
       </div>
 
       <div class="row" id="thirdFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success" id="thirdCorrectChoice">True</button>
-        <button type="button" class="btn btn-danger" id="thirdIncorrectChoice">False</button>
+        <button type="button" class="btn btn-success choice" id="btn-third-correct">True</button>
+        <button type="button" class="btn btn-danger choice" id="btn-third-incorrect">False</button>
       </div>
 
       <div class="row" id="fourthFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success" id="fourthCorrectChoice">True</button>
-        <button type="button" class="btn btn-danger" id="fourthIncorrectChoice">False</button>
+        <button type="button" class="btn btn-success choice" id="btn-fourth-correct">True</button>
+        <button type="button" class="btn btn-danger choice" id="btn-fourth-incorrect">False</button>
       </div>
 
       <!-- Create a pop-up window to display after the user clicks on true or False -->
-      <div class="row popup" id="firstCorrect">
-        <h3>You chose correctly!</h3>
-        <p>More info about the first fact.</p>
+      <div class="row popup web_dialog" id="popup-first-correct">
+        <div class="web_dialog_title"><h3>You chose correctly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the first fact.</p>
+        </div>
       </div>
 
-      <div class="row popup" id="firstCorrect">
-        <h3>You chose correctly!</h3>
-        <p>More info about the first fact.</p>
+      <div class="row popup web_dialog" id="popup-first-incorrect">
+        <div class="web_dialog_title"><h3>You chose incorrectly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the first fact.</p>
+        </div>
       </div>
-      <div class="row popup" id="firstIncorrect">
-        <h3>You chose incorrectly!</h3>
-        <p>More info about the first fact.</p>
+
+      <div class="row popup web_dialog" id="popup-second-correct">
+        <div class="web_dialog_title"><h3>You chose correctly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the second fact.</p>
+        </div>
       </div>
-      <div class="row popup" id="secondCorrect">
-        <h3>You chose correctly!</h3>
-        <p>More info about the first fact.</p>
+
+      <div class="row popup web_dialog" id="popup-second-incorrect">
+        <div class="web_dialog_title"><h3>You chose incorrectly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the second fact.</p>
+        </div>
       </div>
-      <div class="row popup" id="secondIncorrect">
-        <h3>You chose incorrectly!</h3>
-        <p>More info about the first fact.</p>
+
+      <div class="row popup web_dialog" id="popup-third-correct">
+        <div class="web_dialog_title"><h3>You chose correctly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the third fact.</p>
+        </div>
       </div>
-      <div class="row popup" id="thirdCorrect">
-        <h3>You chose correctly!</h3>
-        <p>More info about the first fact.</p>
+
+      <div class="row popup web_dialog" id="popup-third-incorrect">
+        <div class="web_dialog_title"><h3>You chose incorrectly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the third fact.</p>
+        </div>
       </div>
-      <div class="row popup" id="thirdIncorrect">
-        <h3>You chose incorrectly!</h3>
-        <p>More info about the first fact.</p>
+
+      <div class="row popup web_dialog" id="popup-fourth-correct">
+        <div class="web_dialog_title"><h3>You chose correctly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the fourth fact.</p>
+        </div>
       </div>
-      <div class="row popup" id="fourthCorrect">
-        <h3>You chose correctly!</h3>
-        <p>More info about the first fact.</p>
-      </div>
-      <div class="row popup" id="fourthIncorrect">
-        <h3>You chose incorrectly!</h3>
-        <p>More info about the first fact.</p>
+
+      <div class="row popup web_dialog" id="popup-fourth-incorrect">
+        <div class="web_dialog_title"><h3>You chose incorrectly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the fourth fact.</p>
+        </div>
       </div>
       <!-- Done setting up pop-up windows -->
 
