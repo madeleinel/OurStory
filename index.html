@@ -2,8 +2,9 @@
 <html>
 
   <head>
+    <title>Our Story</title>ß
     <meta charset="utf-8">
-    <title>Our Story</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -76,57 +77,110 @@
       <h2>Common myths de-mystified</h2>
       <div class="row" id="firstFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success choice true correct">True</button>
-        <button type="button" class="btn btn-danger choice false incorrect">False</button>
+        <!-- Each "fact" has TRUE / FALSE buttons > The button id's indicate whether it's the correct choice or not -->
+        <button type="button" class="btn btn-success choice" id="btn-first-correct">True</button>
+        <button type="button" class="btn btn-danger choice" id="btn-first-incorrect">False</button>
       </div>
 
       <div class="row" id="secondFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success choice true incorrect">True</button>
-        <button type="button" class="btn btn-danger choice false correct">False</button>
+        <button type="button" class="btn btn-success choice" id="btn-second-correct">True</button>
+        <button type="button" class="btn btn-danger choice" id="btn-second-incorrect">False</button>
       </div>
 
       <div class="row" id="thirdFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success choice true correct">True</button>
-        <button type="button" class="btn btn-danger choice false incorrect">False</button>
+        <button type="button" class="btn btn-success choice" id="btn-third-correct">True</button>
+        <button type="button" class="btn btn-danger choice" id="btn-third-incorrect">False</button>
       </div>
 
       <div class="row" id="fourthFact">
         <p class="perception">Here's a common perception about immigrants.</p>
-        <!-- Add TRUE / FALSE buttons --> <!-- Add classes indicating whether it's correct or not -->
-        <button type="button" class="btn btn-success choice true incorrect">True</button>
-        <button type="button" class="btn btn-danger choice false correct">False</button>
+        <button type="button" class="btn btn-success choice" id="btn-fourth-correct">True</button>
+        <button type="button" class="btn btn-danger choice" id="btn-fourth-incorrect">False</button>
       </div>
 
       <!-- Create a pop-up window to display after the user clicks on true or False -->
-      <div class="row" id="popup">
-
-        <!-- Set up different parts to be called upon depending on whether they chose correctly or not -->
-        <div id="correct"> <!-- To display if the user chose correctly -->
-          <h3>You chose correctly!</h3>
+      <div class="row popup web_dialog" id="popup-first-correct">
+        <div class="web_dialog_title"><h3>You chose correctly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
         </div>
-        <div id="incorrect"> <!-- To display if the user chose incorrectly -->
-          <h3>You chose incorrectly!</h3>
-        </div>
-
-        <!-- Set up different information parts, to provide more information about the relevant fact -->
-        <div class="factMore" id="firstFactMore"> <!-- To display when the user has submitted their choice for the first fact -->
+        <div>
           <p>More info about the first fact.</p>
         </div>
-        <div class="factMore" id="secondFactMore"> <!-- To display when the user has submitted their choice for the second fact -->
+      </div>
+
+      <div class="row popup web_dialog" id="popup-first-incorrect">
+        <div class="web_dialog_title"><h3>You chose incorrectly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the first fact.</p>
+        </div>
+      </div>
+
+      <div class="row popup web_dialog" id="popup-second-correct">
+        <div class="web_dialog_title"><h3>You chose correctly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
           <p>More info about the second fact.</p>
         </div>
-        <div class="factMore" id="thirdFactMore"> <!-- To display when the user has submitted their choice for the third fact -->
+      </div>
+
+      <div class="row popup web_dialog" id="popup-second-incorrect">
+        <div class="web_dialog_title"><h3>You chose incorrectly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the second fact.</p>
+        </div>
+      </div>
+
+      <div class="row popup web_dialog" id="popup-third-correct">
+        <div class="web_dialog_title"><h3>You chose correctly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
           <p>More info about the third fact.</p>
         </div>
-        <div class="factMore" id="fourthFactMore"> <!-- To display when the user has submitted their choice for the fourth fact -->
+      </div>
+
+      <div class="row popup web_dialog" id="popup-third-incorrect">
+        <div class="web_dialog_title"><h3>You chose incorrectly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the third fact.</p>
+        </div>
+      </div>
+
+      <div class="row popup web_dialog" id="popup-fourth-correct">
+        <div class="web_dialog_title"><h3>You chose correctly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
           <p>More info about the fourth fact.</p>
         </div>
-      </div> <!-- Closing the pop-up window div -->
+      </div>
+
+      <div class="row popup web_dialog" id="popup-fourth-incorrect">
+        <div class="web_dialog_title"><h3>You chose incorrectly!</h3></div>
+        <div class="web_dialog_title align_right">
+          <button type="button" class="btn btn-close btn-default">Close</button>
+        </div>
+        <div>
+          <p>More info about the fourth fact.</p>
+        </div>
+      </div>
+      <!-- Done setting up pop-up windows -->
 
     </div> <!-- Closing the Facts div -->
 
@@ -207,8 +261,6 @@
       </div> <!-- Closing the Contact div -->
 
     </div> <!-- Closing the Main tag -->
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwk0E3kvw5gBTvv4N_QspeQZ5ZQRWwgkE_5dzdzYqJ8g9wKA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
     <footer>
       This page was created by Elizabeth Jegede and Madeleine Linder

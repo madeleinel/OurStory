@@ -50,15 +50,28 @@
   margin: 5px 2px;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border: 50%;
+}
+
+.fa-twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
 .message {
 	height: 200px;
 	width: 50px;
 }
 
 /* Set the pop-up window (and all of it's parts) to be hidden by default */
-#popup, #correct, #incorrect, .factMore {
+.popup {
   display: none;
-
   /* Make the pop-up window be fixed to the middle of the screen when it is displayed */
   position: fixed;
   top: 25%;
@@ -66,4 +79,62 @@
   background-color: yellow;
   height: 200px;
   width: 200px;
+}
+
+
+
+
+
+
+.web_dialog_overlay
+{
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background: #000000;
+   opacity: .15;
+   filter: alpha(opacity=15);
+   -moz-opacity: .15;
+   z-index: 101;
+   display: none;
+}
+.web_dialog
+{
+   display: none;
+   position: fixed;
+   width: 380px;
+   height: 200px;
+   top: 50%;
+   left: 50%;
+   margin-left: -190px;
+   margin-top: -100px;
+   background-color: #ffffff;
+   border: 2px solid #336699;
+   padding: 0px;
+   z-index: 102;
+   font-family: Verdana;
+   font-size: 10pt;
+}
+.web_dialog_title
+{
+   border-bottom: solid 2px #336699;
+   background-color: #336699;
+   padding: 4px;
+   color: White;
+   font-weight:bold;
+}
+.web_dialog_title a
+{
+   color: White;
+   text-decoration: none;
+}
+.align_right
+{
+   text-align: right;
 }
