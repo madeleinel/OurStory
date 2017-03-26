@@ -1,9 +1,56 @@
 #landing_page {
   background-image: url("images/placeholder.jpg");
-  min-height: 400px;
+  min-height: 800px;
 }
 
 .container {
   border: 1px solid blue;
   min-height: 200px;
+  width: 100%;
+}
+
+.jumbotron {
+	height: 400px;
+}
+
+#title {
+	text-align: center;
+}
+
+#navbar_ex {
+	 overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.main {
+	padding: 16px;
+	margin-top: 50px;
+}
+
+.profile {
+	height: 150px;
+	width: 150px;
+	float: left;
+	padding: 0 20px 20px 0;
+}
+
+.story {
+	text-align: justify;
+}
+
+.icons {
+  padding: 30px;
+  font-size: 40px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  float: center;
+  margin: 5px 2px;
+}
+
+.message {
+	height: 200px;
+	width: 50px;
 }
