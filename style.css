@@ -1,45 +1,72 @@
-#landing_page {
-  background-image: url("images/placeholder.jpg");
-  min-height: 800px;
+/* Styling the main elements of the page */
+body {
 }
 
-.container {
-  border: 1px solid blue;
-  min-height: 200px;
-  width: 100%;
+.main h2 {
+  font-family: "Nova Oval", sans-serif;
 }
 
+.main .container {
+  /* this padding ensures that when using the navbar to jump to a section of the page, it will display the top of the section */
+  padding-top: 50px;
+}
+
+.row {
+  /* This creates some negative space between each Story / Fact */
+  margin: 60px 0;
+  /* This makes each .row section less wide on the page, and adds some empty space above and below them */
+  padding: 40px 40px;
+}
+
+/* Styling the landing page */
 .jumbotron {
-	height: 400px;
+	height: 600px;
+}
+
+.jumbotron h1 {
+  margin-top: 200px;
+  font-family: "Nova Oval", sans-serif;
+}
+
+#landingPage {
+  background-image: url("images/landing_page.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #title {
-	text-align: center;
+	color: white;
 }
 
-#navbar_ex {
-	 overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+/* Styling the Stories section */
+.row img, .img-circle, .img-responsive {
+  height: 150px;
+  width: 150px;
 }
 
-.main {
-	padding: 16px;
-	margin-top: 50px;
+/* Styling the Facts section */
+.web_dialog {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50vw;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px grey;
+  z-index: 102; /* This ensures that the popup window is displayed on top of the other content */
 }
 
-.profile {
-	height: 150px;
-	width: 150px;
-	float: left;
-	padding: 0 20px 20px 0;
+.web_dialog_title {
+  color: white;
+  font-size: 2em;
+  padding: 10px 0;
 }
 
-.story {
-	text-align: justify;
+.fact_popup {
+  padding: 20px;
 }
 
+/* Styling the Contact section */
 .icons {
   padding: 30px;
   font-size: 40px;
@@ -69,76 +96,12 @@
 	width: 50px;
 }
 
-/* Set the pop-up window (and all of it's parts) to be hidden by default */
-.popup {
-  display: none;
-  /* Make the pop-up window be fixed to the middle of the screen when it is displayed */
-  position: fixed;
-  top: 25%;
-  left: 25%;
-  background-color: yellow;
-  height: 200px;
-  width: 200px;
-}
-
-
-
-
-
-
-.web_dialog_overlay
-{
-   position: fixed;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   height: 100%;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   background: #000000;
-   opacity: .15;
-   filter: alpha(opacity=15);
-   -moz-opacity: .15;
-   z-index: 101;
-   display: none;
-}
-.web_dialog
-{
-   display: none;
-   position: fixed;
-   width: 380px;
-   height: 200px;
-   top: 50%;
-   left: 50%;
-   margin-left: -190px;
-   margin-top: -100px;
-   background-color: #ffffff;
-   border: 2px solid #336699;
-   padding: 0px;
-   z-index: 102;
-   font-family: Verdana;
-   font-size: 10pt;
-}
-.web_dialog_title
-{
-   border-bottom: solid 2px #336699;
-   background-color: #336699;
-   padding: 4px;
-   color: White;
-   font-weight:bold;
-}
-.web_dialog_title a
-{
-   color: White;
-   text-decoration: none;
-}
-.align_right
-{
-   text-align: right;
-}
-
 #googledoc {
   width: 100%;
+}
+
+/* Styling the footer */
+footer {
+  width: auto;
+  padding: 10px 0;
 }
