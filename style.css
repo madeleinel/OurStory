@@ -1,3 +1,10 @@
+body {
+}
+
+h1, h2 {
+  font-family: "Nova Oval", sans-serif;
+}
+
 #landingPage {
   background-image: url("https://thumbs.dreamstime.com/x/multiethnic-group-people-holding-national-flags-outdoors-40979235.jpg");
   background-size: cover;
@@ -12,8 +19,8 @@
 .row {
   /* This creates some negative space between each Story / Fact */
   margin: 60px 0;
-  /* This makes each .row section less wide on the page */
-  padding: 0 80px;
+  /* This makes each .row section less wide on the page, and adds some empty space above and below them */
+  padding: 40px 40px;
 }
 
 .jumbotron {
