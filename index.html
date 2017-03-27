@@ -56,27 +56,30 @@
         <!-- Create a profile for each person, including their photo and their story -->
         <div class="row bg-success" id="firstStory">
           <img class="img-circle img-responsive pull-left" src="images/profile1.jpeg" />
-          <p>I moved to London five years ago, and during that time I have started and finished a university degree, and worked three different jobs. I love living in London, but I wish it wasn’t so expensive! I had to work part-time throughout my degree to be able to afford it, and that was after getting a student loan!</p>
-          <p>It really frustrates me when people talk about how immigrant come into this country just to claim benefits and “loaf” off of the British people; during my time here I have paid huge sums in tuition (that I have loaned from my own government), worked and paid taxes, and been to my GP twice — I really feel that I’m contributing a lot more to the community than I am taking from it.</p>
-        </div>
-
-        <div class="row bg-warning" id="secondStory">
-          <img class="img-circle img-responsive pull-right" src="images/placeholder.jpg" />
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
         </div>
 
+        <div class="row bg-warning" id="secondStory">
+          <img class="img-circle img-responsive pull-right" src="images/profile2.jpeg" />
+          <p>I've lived in England for several years now, and I love it here! I moved here for work (I'm a teacher, and I found a great secondary school to work in) but within the first year I met my now-husband. I have a life here; a husband, a house, a job, friends.</p>
+          <p>But recently I asked the kids in my class to write an argumentative essay, either for or against immigration, and each and every one of them argumented against it. Reading them, it broke my heart that they have such negative views of immigrants, and that they felt comfortable handing those essays to me, when they know that I am one.</p>
+        </div>
+
         <div class="row bg-success" id="thirdStory">
-          <img class="img-circle img-responsive pull-left" src="images/placeholder.jpg" />
+          <img class="img-circle img-responsive pull-left" src="images/profile3.jpeg" />
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
         </div>
 
         <div class="row bg-warning" id="fourthStory">
-          <img class="img-circle img-responsive pull-right" src="images/placeholder.jpg" />
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+          <img class="img-circle img-responsive pull-right" src="images/profile4.jpeg" />
+          <p>I moved to London five years ago, and during that time I have started and finished a university degree, and worked three different jobs. I love living in London, but I wish it wasn’t so expensive! I had to work part-time throughout my degree to be able to afford it, and that was after getting a student loan!</p>
+          <p>It really frustrates me when people talk about how immigrant come into this country just to claim benefits and “loaf” off of the British people; during my time here I have paid huge sums in tuition (that I have loaned from my own government), worked and paid taxes, and been to my GP twice — I really feel that I’m contributing a lot more to the community than I am taking from it.</p>
         </div>
       </div> <!-- Closing the Stories div -->
 
-      <div class="container" id="facts">
+      <div class="container text-center" id="facts">
         <h2 class="text-center">Common myths de-mystified</h2>
 
         <div class="row bg-success" id="firstFact">
@@ -87,9 +90,9 @@
         </div>
 
         <div class="row bg-warning" id="secondFact">
-          <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-          <button type="button" class="btn btn-block btn-success choice correct" id="btn-second">True</button>
-          <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-second">False</button>
+          <p class="perception">UK prisons are filling up with foreigners; soon there will be more foreigners than UK citizens in our prisons.</p>
+          <button type="button" class="btn btn-block btn-success choice incorrect" id="btn-second">True</button>
+          <button type="button" class="btn btn-block btn-danger choice correct" id="btn-second">False</button>
         </div>
 
         <div class="row bg-success" id="thirdFact">
@@ -105,30 +108,31 @@
         </div>
 
         <!-- Create a pop-up window to display after the user clicks on true or False -->
-        <div class="web_dialog" id="popup">
-          <div class="web_dialog_title align-right">
-            <button type="button" class="btn btn-close btn-default">Close</button>
-          </div>
-          <div class="web_dialog_title title_correct">You chose correctly!</div>
-          <div class="web_dialog_title title_incorrect">You chose incorrectly!</div>
+        <div class="web_dialog text-center">
+          <div class="web_dialog_title title_correct btn-success">You chose correctly!</div>
+          <div class="web_dialog_title title_incorrect btn-danger">You chose incorrectly!</div>
 
-          <div class="row fact_popup" id="first_fact">
+          <div class="fact_popup" id="first_fact">
             <p>Immigrants contribute to both sides of the NHS; while they affects the number of people requiring treatment, they also contribute to its resources by paying taxes and working as medical professionals.</p>
-            <p>Source: <a href="https://fullfact.org/europe/eu-immigration-and-pressure-nhs/">Full Fact</a></p>
+            <p><small>Source: <a href="https://fullfact.org/europe/eu-immigration-and-pressure-nhs/" target="_blank">Full Fact</a></small></p>
           </div>
-          <div class="row fact_popup" id="second_fact">
-            <p>More info about the second fact.</p>
+          <div class="fact_popup" id="second_fact">
+            <p>Currently, about one in eight prisoners in England and Wales is a foreign citizen, and this percentage has been falling over the last few years.</p>
+            <p><small>Source: <a href="https://fullfact.org/immigration/foreigners-prison/" target="_blank">Full Fact</a></small></p>
           </div>
-          <div class="row fact_popup" id="third">
+          <div class="fact_popup" id="third">
             <p>More info about the third fact.</p>
+            <p><small>Source: <a href="" target="_blank">Source</a></small></p>
           </div>
-          <div class="row fact_popup" id="fourth">
+          <div class="fact_popup" id="fourth">
             <p>More info about the fourth fact.</p>
+            <p><small>Source: <a href="" target="_blank">Source</a></small></p>
           </div>
-        </div>
 
-
-        <!-- Done setting up pop-up windows -->
+          <div class="web_dialog_title">
+            <button type="button" class="btn btn-close btn-warning">Close</button>
+          </div>
+        </div> <!-- Done setting up the pop-up window -->
 
       </div> <!-- Closing the Facts div -->
 
