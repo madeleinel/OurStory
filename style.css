@@ -5,31 +5,28 @@
 }
 
 .container {
-  /*border: 1px solid blue;*/
-  min-height: 200px;
-  width: 100%;
+  /* this padding ensures that when using the navbar to jump to a section of the page, it will display the top of the section */
+  padding-top: 50px;
+}
+
+.row {
+  /* This creates some negative space between each Story / Fact */
+  margin: 60px 0;
+  /* This makes each .row section less wide on the page */
+  padding: 0 80px;
 }
 
 .jumbotron {
-	height: 400px;
+	height: 600px;
 }
 
 #title {
-	text-align: center;
-}
-
-.main {
-	padding: 16px;
-	margin-top: 50px;
+	color: white;
 }
 
 .row img, .img-circle, .img-responsive {
 	height: 150px;
 	width: 150px;
-}
-
-.story {
-	text-align: justify;
 }
 
 .icons {
