@@ -105,30 +105,28 @@
         </div>
 
         <!-- Create a pop-up window to display after the user clicks on true or False -->
-        <div class="web_dialog" id="popup">
-          <div class="web_dialog_title align-right">
-            <button type="button" class="btn btn-close btn-default">Close</button>
-          </div>
-          <div class="web_dialog_title title_correct">You chose correctly!</div>
-          <div class="web_dialog_title title_incorrect">You chose incorrectly!</div>
+        <div class="web_dialog text-center">
+          <div class="web_dialog_title title_correct btn-success">You chose correctly!</div>
+          <div class="web_dialog_title title_incorrect btn-danger">You chose incorrectly!</div>
 
-          <div class="row fact_popup" id="first_fact">
+          <div class="fact_popup" id="first_fact">
             <p>Immigrants contribute to both sides of the NHS; while they affects the number of people requiring treatment, they also contribute to its resources by paying taxes and working as medical professionals.</p>
-            <p>Source: <a href="https://fullfact.org/europe/eu-immigration-and-pressure-nhs/">Full Fact</a></p>
+            <p><small>Source: <a href="https://fullfact.org/europe/eu-immigration-and-pressure-nhs/" target="_blank">Full Fact</a></small></p>
           </div>
-          <div class="row fact_popup" id="second_fact">
+          <div class="fact_popup" id="second_fact">
             <p>More info about the second fact.</p>
           </div>
-          <div class="row fact_popup" id="third">
+          <div class="fact_popup" id="third">
             <p>More info about the third fact.</p>
           </div>
-          <div class="row fact_popup" id="fourth">
+          <div class="fact_popup" id="fourth">
             <p>More info about the fourth fact.</p>
           </div>
-        </div>
 
-
-        <!-- Done setting up pop-up windows -->
+          <div class="web_dialog_title">
+            <button type="button" class="btn btn-close btn-warning">Close</button>
+          </div>
+        </div> <!-- Done setting up the pop-up window -->
 
       </div> <!-- Closing the Facts div -->
 
