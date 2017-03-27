@@ -23,13 +23,13 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Our Story</a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="top-navbar">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
         </div> <!-- Closing ".navbar-header" -->
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="top-navbar">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#about">About us</a></li>
             <li class="active"><a href="#stories">Stories</a></li>
@@ -41,175 +41,151 @@
       </div>
     </nav>
 
-    <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#" class="navbar-brand">Our Story</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="active"><a href="#about">About Us</a></li>
-          <li class="active"><a href="#stories">Stories</a></li>
-          <li class="active"><a href="#facts">Facts</a></li>
-          <li class="active"><a href="#resources">Resources</a></li>
-          <li class="active"><a href="#contact">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav> -->
+    <div class="main">
 
-  <div class="main">
-
-    <div class="container" id="about">
-      <h2 class="text-center">About Us</h2>
-      <div class="row">
-        <p class="text-center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
-      </div>
-
-      <!-- <button class="btn btn-success show-me" data-toggle="modal" data-target="#myModal1">Show me how!</button> -->
-
-    </div> <!-- Closing the About div -->
-
-    <div class="container" id="stories">
-      <h2 class="text-center">Stories</h2>
-      <!-- Create a profile for each person, including their photo and their story -->
-      <div class="row bg-success" id="firstStory">
-        <img class="img-circle img-responsive pull-left" src="images/placeholder.jpg" />
-        <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-      </div>
-
-      <div class="row" id="secondStory">
-        <img class="img-circle img-responsive pull-right" src="images/placeholder.jpg" />
-        <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-      </div>
-
-      <div class="row bg-success" id="thirdStory">
-        <img class="img-circle img-responsive pull-left" src="images/placeholder.jpg" />
-        <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-      </div>
-
-      <div class="row" id="fourthStory">
-        <img class="img-circle img-responsive pull-right" src="images/placeholder.jpg" />
-        <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-      </div>
-    </div> <!-- Closing the Stories div -->
-
-    <div class="container" id="facts">
-      <h2 class="text-center">Common myths de-mystified</h2>
-
-      <div class="row bg-success" id="firstFact">
-        <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-        <!-- Each "fact" has TRUE / FALSE buttons > The button id's indicate whether it's the correct choice or not -->
-        <button type="button" class="btn btn-block btn-success choice correct" id="btn-first">True</button>
-        <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-first">False</button>
-      </div>
-
-      <div class="row" id="secondFact">
-        <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-        <button type="button" class="btn btn-block btn-success choice correct" id="btn-second">True</button>
-        <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-second">False</button>
-      </div>
-
-      <div class="row bg-success" id="thirdFact">
-        <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-        <button type="button" class="btn btn-block btn-success choice correct" id="btn-third">True</button>
-        <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-third">False</button>
-      </div>
-
-      <div class="row" id="fourthFact">
-        <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-        <button type="button" class="btn btn-block btn-success choice correct" id="btn-fourth">True</button>
-        <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-fourth">False</button>
-      </div>
-
-      <!-- Create a pop-up window to display after the user clicks on true or False -->
-      <div class="web_dialog" id="popup">
-        <div class="web_dialog_title align-right">
-          <button type="button" class="btn btn-close btn-default">Close</button>
+      <div class="container" id="about">
+        <h2 class="text-center">About Us</h2>
+        <div class="row">
+          <p class="text-center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
         </div>
-        <div class="web_dialog_title title_correct">You chose correctly!</div>
-        <div class="web_dialog_title title_incorrect">You chose incorrectly!</div>
+      </div> <!-- Closing the About div -->
 
-        <div class="row fact_popup" id="first_fact">
-          <p>More info about the first fact.</p>
+      <div class="container" id="stories">
+        <h2 class="text-center">Stories</h2>
+        <!-- Create a profile for each person, including their photo and their story -->
+        <div class="row bg-success" id="firstStory">
+          <img class="img-circle img-responsive pull-left" src="images/placeholder.jpg" />
+          <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
         </div>
-        <div class="row fact_popup" id="second_fact">
-          <p>More info about the second fact.</p>
+
+        <div class="row" id="secondStory">
+          <img class="img-circle img-responsive pull-right" src="images/placeholder.jpg" />
+          <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
         </div>
-        <div class="row fact_popup" id="third">
-          <p>More info about the third fact.</p>
+
+        <div class="row bg-success" id="thirdStory">
+          <img class="img-circle img-responsive pull-left" src="images/placeholder.jpg" />
+          <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
         </div>
-        <div class="row fact_popup" id="fourth">
-          <p>More info about the fourth fact.</p>
+
+        <div class="row" id="fourthStory">
+          <img class="img-circle img-responsive pull-right" src="images/placeholder.jpg" />
+          <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
         </div>
-      </div>
+      </div> <!-- Closing the Stories div -->
+
+      <div class="container" id="facts">
+        <h2 class="text-center">Common myths de-mystified</h2>
+
+        <div class="row bg-success" id="firstFact">
+          <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+          <!-- Each "fact" has TRUE / FALSE buttons > The button id's indicate whether it's the correct choice or not -->
+          <button type="button" class="btn btn-block btn-success choice correct" id="btn-first">True</button>
+          <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-first">False</button>
+        </div>
+
+        <div class="row" id="secondFact">
+          <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+          <button type="button" class="btn btn-block btn-success choice correct" id="btn-second">True</button>
+          <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-second">False</button>
+        </div>
+
+        <div class="row bg-success" id="thirdFact">
+          <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+          <button type="button" class="btn btn-block btn-success choice correct" id="btn-third">True</button>
+          <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-third">False</button>
+        </div>
+
+        <div class="row" id="fourthFact">
+          <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+          <button type="button" class="btn btn-block btn-success choice correct" id="btn-fourth">True</button>
+          <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-fourth">False</button>
+        </div>
+
+        <!-- Create a pop-up window to display after the user clicks on true or False -->
+        <div class="web_dialog" id="popup">
+          <div class="web_dialog_title align-right">
+            <button type="button" class="btn btn-close btn-default">Close</button>
+          </div>
+          <div class="web_dialog_title title_correct">You chose correctly!</div>
+          <div class="web_dialog_title title_incorrect">You chose incorrectly!</div>
+
+          <div class="row fact_popup" id="first_fact">
+            <p>More info about the first fact.</p>
+          </div>
+          <div class="row fact_popup" id="second_fact">
+            <p>More info about the second fact.</p>
+          </div>
+          <div class="row fact_popup" id="third">
+            <p>More info about the third fact.</p>
+          </div>
+          <div class="row fact_popup" id="fourth">
+            <p>More info about the fourth fact.</p>
+          </div>
+        </div>
 
 
-      <!-- Done setting up pop-up windows -->
+        <!-- Done setting up pop-up windows -->
 
-    </div> <!-- Closing the Facts div -->
+      </div> <!-- Closing the Facts div -->
 
-    <div class="container" id="resources">
-      <h2 class="text-center">Resources</h2>
-      <div class="row">
-       <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-       <table class="table table-responsive" id="information">
-         <thead>
-           <tr>
-             <th colspan="3" class="text-center">More information</th>
-           </tr>
-           <tr>
-             <th>Statistics</th>
-             <th>Resources</th>
-             <th>Information</th>
-           </tr>
-         </thead>
-         <tbody>
-           <tr>
-             <td>Row 1, Column 1</td>
-             <td>Row 1, Column 2</td>
-             <td>Row 1, Column 3</td>
-           </tr>
-           <tr>
-             <td>Row 2, Column 1</td>
-             <td>Row 2, Column 2</td>
-             <td>Row 2, Column 3</td>
-           </tr>
-         </tbody>
-       </table>
-       <table class="table table-responsive" id="organisations">
-         <thead>
-           <tr>
-             <th colspan="4" class="text-center">Local organisations to get involved with</th>
-           </tr>
-           <tr>
-             <th>London</th>
-             <th>South East England</th>
-             <th>South West England</th>
-             <th>Midlands & North of England</th>
-           </tr>
-         </thead>
-         <tbody>
-           <tr>
-             <td>Row 1, Column 1</td>
-             <td>Row 1, Column 2</td>
-             <td>Row 1, Column 3</td>
-             <td>Row 1, Column 4</td>
-           </tr>
-           <tr>
-             <td>Row 2, Column 1</td>
-             <td>Row 2, Column 2</td>
-             <td>Row 2, Column 3</td>
-             <td>Row 2, Column 4</td>
-           </tr>
-         </tbody>
-       </table>
-     </div>
-    </div> <!-- Closing the Resources div -->
+      <div class="container" id="resources">
+        <h2 class="text-center">Resources</h2>
+        <div class="row">
+         <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+         <table class="table table-responsive" id="information">
+           <thead>
+             <tr>
+               <th colspan="3" class="text-center">More information</th>
+             </tr>
+             <tr>
+               <th>Statistics</th>
+               <th>Resources</th>
+               <th>Information</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Row 1, Column 1</td>
+               <td>Row 1, Column 2</td>
+               <td>Row 1, Column 3</td>
+             </tr>
+             <tr>
+               <td>Row 2, Column 1</td>
+               <td>Row 2, Column 2</td>
+               <td>Row 2, Column 3</td>
+             </tr>
+           </tbody>
+         </table>
+         <table class="table table-responsive" id="organisations">
+           <thead>
+             <tr>
+               <th colspan="4" class="text-center">Local organisations to get involved with</th>
+             </tr>
+             <tr>
+               <th>London</th>
+               <th>South East England</th>
+               <th>South West England</th>
+               <th>Midlands & North of England</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Row 1, Column 1</td>
+               <td>Row 1, Column 2</td>
+               <td>Row 1, Column 3</td>
+               <td>Row 1, Column 4</td>
+             </tr>
+             <tr>
+               <td>Row 2, Column 1</td>
+               <td>Row 2, Column 2</td>
+               <td>Row 2, Column 3</td>
+               <td>Row 2, Column 4</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+      </div> <!-- Closing the Resources div -->
 
       <div class="container" id="contact">
         <h2 class="text-center">Contact</h2>
@@ -246,6 +222,7 @@
     <!-- Link to the jQuery library and our jQuery code
     Note that the jQuery library needs to be linked before our code, so that our code can use the library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 
   </body>

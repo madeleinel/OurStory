@@ -11,18 +11,18 @@ $(document).ready(function showPopups() {
     $(".web_dialog").show();
   })
   // Clicking on the Close button will call hide the pop-up windows
-  $(".btn-close").click(function(e) {
+  $(".btn-close").click(function() {
     $(".web_dialog").hide();
   });
 
   // Clicking on the correct button will display a Success message
-  $(".correct").click(function(e) {
+  $(".correct").click(function() {
     console.log("clicked the correct button");
     $(".title_correct").show();
     $(".title_incorrect").hide();
   })
   // Clicking on the wrong button will display a Failure message
-  $(".incorrect").click(function(e) {
+  $(".incorrect").click(function() {
     console.log("clicked the incorrect button");
     $(".title_incorrect").show();
     $(".title_correct").hide();
