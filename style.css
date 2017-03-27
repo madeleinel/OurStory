@@ -1,10 +1,11 @@
-#landing_page {
-  background-image: url("images/placeholder.jpg");
-  min-height: 800px;
+#landingPage {
+  background-image: url("https://thumbs.dreamstime.com/x/multiethnic-group-people-holding-national-flags-outdoors-40979235.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   min-height: 200px;
   width: 100%;
 }
@@ -29,11 +30,9 @@
 	margin-top: 50px;
 }
 
-.profile {
+.row img, .img-circle, .img-responsive {
 	height: 150px;
 	width: 150px;
-	float: left;
-	padding: 0 20px 20px 0;
 }
 
 .story {

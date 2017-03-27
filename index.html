@@ -43,61 +43,65 @@
   <div class="main">
 
     <div class="container" id="about">
-      <h2>About Us</h2>
+      <h2 class="text-center">About Us</h2>
       <div class="row">
-        <p class="introduction">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
+        <p class="text-center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
       </div>
+
+      <!-- <button class="btn btn-success show-me" data-toggle="modal" data-target="#myModal1">Show me how!</button> -->
+
     </div> <!-- Closing the About div -->
 
     <div class="container" id="stories">
-      <h2>Stories</h2>
+      <h2 class="text-center">Stories</h2>
       <!-- Create a profile for each person, including their photo and their story -->
-      <div class="row" id="firstStory">
-        <p class="story"><img class="profile" src="images/placeholder.jpg" />
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+      <div class="row bg-success" id="firstStory">
+        <img class="img-circle img-responsive pull-left" src="images/placeholder.jpg" />
+        <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
       </div>
 
       <div class="row" id="secondStory">
-        <p class="story"><img class="profile" src="images/placeholder.jpg" />
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+        <img class="img-circle img-responsive pull-right" src="images/placeholder.jpg" />
+        <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
       </div>
 
-      <div class="row" id="thirdStory">
-        <p class="story"><img class="profile" src="images/placeholder.jpg" />
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+      <div class="row bg-success" id="thirdStory">
+        <img class="img-circle img-responsive pull-left" src="images/placeholder.jpg" />
+        <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
       </div>
 
       <div class="row" id="fourthStory">
-        <p class="story"><img class="profile" src="images/placeholder.jpg" />
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+        <img class="img-circle img-responsive pull-right" src="images/placeholder.jpg" />
+        <p class="story">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
       </div>
     </div> <!-- Closing the Stories div -->
 
     <div class="container" id="facts">
-      <h2>Common myths de-mystified</h2>
-      <div class="row" id="firstFact">
-        <p class="perception">Here's a common perception about immigrants.</p>
+      <h2 class="text-center">Common myths de-mystified</h2>
+
+      <div class="row bg-success" id="firstFact">
+        <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
         <!-- Each "fact" has TRUE / FALSE buttons > The button id's indicate whether it's the correct choice or not -->
-        <button type="button" class="btn btn-success choice" id="btn-first-correct">True</button>
-        <button type="button" class="btn btn-danger choice" id="btn-first-incorrect">False</button>
+        <button type="button" class="btn btn-block btn-success choice" id="btn-first-correct">True</button>
+        <button type="button" class="btn btn-block btn-danger choice" id="btn-first-incorrect">False</button>
       </div>
 
       <div class="row" id="secondFact">
-        <p class="perception">Here's a common perception about immigrants.</p>
-        <button type="button" class="btn btn-success choice" id="btn-second-correct">True</button>
-        <button type="button" class="btn btn-danger choice" id="btn-second-incorrect">False</button>
+        <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+        <button type="button" class="btn btn-block btn-success choice" id="btn-first-correct">True</button>
+        <button type="button" class="btn btn-block btn-danger choice" id="btn-first-incorrect">False</button>
       </div>
 
-      <div class="row" id="thirdFact">
-        <p class="perception">Here's a common perception about immigrants.</p>
-        <button type="button" class="btn btn-success choice" id="btn-third-correct">True</button>
-        <button type="button" class="btn btn-danger choice" id="btn-third-incorrect">False</button>
+      <div class="row bg-success" id="thirdFact">
+        <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+        <button type="button" class="btn btn-block btn-success choice" id="btn-first-correct">True</button>
+        <button type="button" class="btn btn-block btn-danger choice" id="btn-first-incorrect">False</button>
       </div>
 
       <div class="row" id="fourthFact">
-        <p class="perception">Here's a common perception about immigrants.</p>
-        <button type="button" class="btn btn-success choice" id="btn-fourth-correct">True</button>
-        <button type="button" class="btn btn-danger choice" id="btn-fourth-incorrect">False</button>
+        <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
+        <button type="button" class="btn btn-block btn-success choice" id="btn-first-correct">True</button>
+        <button type="button" class="btn btn-block btn-danger choice" id="btn-first-incorrect">False</button>
       </div>
 
       <!-- Create a pop-up window to display after the user clicks on true or False -->
@@ -185,8 +189,8 @@
     </div> <!-- Closing the Facts div -->
 
     <div class="container" id="resources">
-      <h2>Resources</h2>
-      <div class="row">
+      <h2 class="text-center">Resources</h2>
+      <div class="row text-center">
        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
        <h3>More Statistics</h3>
           <ul>
@@ -235,7 +239,7 @@
       </div> <!-- Closing the Resources div -->
 
       <div class="container" id="contact">
-        <h2>Contact</h2>
+        <h2 class="text-center">Contact</h2>
         <div class="row">
           <h3>Follow us on social media!</h3>
           <div class="icons">
