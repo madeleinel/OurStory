@@ -91,9 +91,8 @@ body {
   color: white;
 }
 
-.message {
-	height: 200px;
-	width: 50px;
+#googledoc {
+  width: 100%;
 }
 
 /* Styling the footer */
