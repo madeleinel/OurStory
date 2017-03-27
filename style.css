@@ -1,43 +1,39 @@
-#landing_page {
-  background-image: url("images/placeholder.jpg");
-  min-height: 800px;
+body {
+}
+
+h1, h2 {
+  font-family: "Nova Oval", sans-serif;
+}
+
+#landingPage {
+  background-image: url("https://thumbs.dreamstime.com/x/multiethnic-group-people-holding-national-flags-outdoors-40979235.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
-  border: 1px solid blue;
-  min-height: 200px;
-  width: 100%;
+  /* this padding ensures that when using the navbar to jump to a section of the page, it will display the top of the section */
+  padding-top: 50px;
+}
+
+.row {
+  /* This creates some negative space between each Story / Fact */
+  margin: 60px 0;
+  /* This makes each .row section less wide on the page, and adds some empty space above and below them */
+  padding: 40px 40px;
 }
 
 .jumbotron {
-	height: 400px;
+	height: 600px;
 }
 
 #title {
-	text-align: center;
+	color: white;
 }
 
-#navbar_ex {
-	 overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-}
-
-.main {
-	padding: 16px;
-	margin-top: 50px;
-}
-
-.profile {
+.row img, .img-circle, .img-responsive {
 	height: 150px;
 	width: 150px;
-	float: left;
-	padding: 0 20px 20px 0;
-}
-
-.story {
-	text-align: justify;
 }
 
 .icons {
@@ -68,23 +64,6 @@
 	height: 200px;
 	width: 50px;
 }
-
-/* Set the pop-up window (and all of it's parts) to be hidden by default */
-.popup {
-  display: none;
-  /* Make the pop-up window be fixed to the middle of the screen when it is displayed */
-  position: fixed;
-  top: 25%;
-  left: 25%;
-  background-color: yellow;
-  height: 200px;
-  width: 200px;
-}
-
-
-
-
-
 
 .web_dialog_overlay
 {
