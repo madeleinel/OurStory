@@ -6,6 +6,24 @@ body {
   font-family: "Nova Oval", sans-serif;
 }
 
+.main h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+  padding: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+}
+
+p a {
+  color: black;
+}
+
+p a:hover {
+  color: black;
+}
+
 .main .container {
   /* this padding ensures that when using the navbar to jump to a section of the page, it will display the top of the section */
   padding-top: 50px;
@@ -15,7 +33,7 @@ body {
   /* This creates some negative space between each Story / Fact */
   margin: 60px 0;
   /* This makes each .row section less wide on the page, and adds some empty space above and below them */
-  padding: 40px 40px;
+  padding: 40px 80px;
 }
 
 /* Styling the landing page */
@@ -28,20 +46,39 @@ body {
   font-family: "Nova Oval", sans-serif;
 }
 
+.jumbotron p {
+  margin-top: 180px;
+}
+
+#title, #quote {
+	color: white;
+}
+
 #landingPage {
   background-image: url("images/landing_page.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-#title {
-	color: white;
+/* Styling the nav bar */
+.navbar a, .nav a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 24px;
 }
 
 /* Styling the Stories section */
 .row img, .img-circle, .img-responsive {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
+}
+
+.row .pull-right {
+  margin: 0 0 10px 20px;
+}
+
+.row .pull-left {
+  margin: 0 20px 10px 0;
 }
 
 /* Styling the Facts section */
@@ -63,20 +100,16 @@ body {
 }
 
 .fact_popup {
-  padding: 20px;
+  padding: 10px;
 }
 
-/* Styling the Contact section */
-.icons {
-  padding: 30px;
-  font-size: 40px;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
-  float: center;
-  margin: 5px 2px;
+/* Styling the Resources section */
+.main h3 {
+  padding: 20px 0;
+  text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /*.fa {
   padding: 20px;
   font-size: 30px;
@@ -88,24 +121,76 @@ body {
 
 .fa-twitter {
   background-color: #55ACEE;
+=======
+table {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
 }
 
-#googledoc {
-  width: 100%;
+table td {
+  border-bottom: 1px solid white;
+>>>>>>> refs/remotes/origin/master
+}
+
+table a {
+  color: black;
+}
+
+table a:hover {
+  color: black;
+}
+
+/* Styling the Contact section */
+.icons {
+  font-size: 40px;
+}
+
+.fa {
+  margin: 0 40px 40px 40px;
 }
 
 /* Styling the footer */
 footer {
-  width: auto;
   padding: 10px 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: black;
+  color: white;
 }
 
-#googledoc {
-  width: 100%;
-}
-
-/* Styling the footer */
-footer {
-  width: auto;
-  padding: 10px 0;
+/* Add styling that only applies on small screens (eg mobile) */
+@media only screen and (max-width: 40em) {
+  /* Making the popup windows smaller when viewing the site on a smaller screen */
+  .web_dialog {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80vw;
+  }
+  .fact_popup {
+    padding: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .web_dialog_title {
+    padding: 5px 0;
+  }
+  .row .pull-right, .row .pull-left {
+    margin: 0 10px 30px 10px;
+  }
+  .row .text-right, .row .text-left {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .table {
+    padding: 5px;
+  }
+  /*.table h3 {
+    padding: 40px 80px;
+  }*/
+  .fa {
+    margin: 0 5px 20px 5px;
+  }
 }
