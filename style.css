@@ -93,33 +93,6 @@ p a:hover {
   z-index: 102; /* This ensures that the popup window is displayed on top of the other content */
 }
 
-@media only screen and (max-width: 40em) {
-  /* Making the popup windows smaller when viewing the site on a smaller screen */
-  .web_dialog {
-    position: fixed;
-    top: 10%;
-    left: 10%;
-    width: 80vw;
-  }
-  .fact_popup {
-    padding: 0;
-  }
-  p {
-    padding: 0;
-    margin: 0;
-  }
-  .web_dialog_title {
-    padding: 5px 0;
-  }
-  .row .pull-right, .row .pull-left {
-    margin: 0 10px 30px 10px;
-  }
-  .row .text-right, .row .text-left {
-    margin: 20px 0;
-    text-align: center;
-  }
-}
-
 .web_dialog_title {
   color: white;
   font-size: 2em;
@@ -159,15 +132,8 @@ table a:hover {
 }
 
 .fa {
-  margin: 40px;
-  /*padding: 20px;
-  width: 80px;
-  font-size: 80px;*/
+  margin: 0 40px 40px 40px;
 }
-
-/*#googledoc {
-  width: auto;
-}*/
 
 /* Styling the footer */
 footer {
@@ -176,4 +142,41 @@ footer {
   font-size: 18px;
   background-color: black;
   color: white;
+}
+
+/* Add styling that only applies on small screens (eg mobile) */
+@media only screen and (max-width: 40em) {
+  /* Making the popup windows smaller when viewing the site on a smaller screen */
+  .web_dialog {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80vw;
+  }
+  .fact_popup {
+    padding: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .web_dialog_title {
+    padding: 5px 0;
+  }
+  .row .pull-right, .row .pull-left {
+    margin: 0 10px 30px 10px;
+  }
+  .row .text-right, .row .text-left {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .table {
+    padding: 5px;
+  }
+  /*.table h3 {
+    padding: 40px 80px;
+  }*/
+  .fa {
+    margin: 0 5px 20px 5px;
+  }
 }
