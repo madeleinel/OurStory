@@ -109,6 +109,19 @@ p a:hover {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
+/*.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border: 50%;
+}*/
+
+.fa-twitter {
+  background-color: #55ACEE;
+=======
 table {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 16px;
@@ -116,6 +129,7 @@ table {
 
 table td {
   border-bottom: 1px solid white;
+>>>>>>> refs/remotes/origin/master
 }
 
 table a {
