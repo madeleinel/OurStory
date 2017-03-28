@@ -69,12 +69,10 @@ p a:hover {
 }
 
 .row .pull-right {
-  /*border: 1px solid blue;*/
   margin: 0 0 10px 20px;
 }
 
 .row .pull-left {
-  /*border: 1px solid red;*/
   margin: 0 20px 10px 0;
 }
 
@@ -101,6 +99,11 @@ p a:hover {
 }
 
 /* Styling the Resources section */
+.main h3 {
+  padding: 20px 0;
+  text-decoration: underline;
+}
+
 table {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 16px;
@@ -136,8 +139,7 @@ table a:hover {
 
 /* Styling the footer */
 footer {
-  width: auto;
   padding: 10px 0;
-  background-color: black;
-  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
 }
