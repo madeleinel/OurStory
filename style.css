@@ -60,6 +60,7 @@ p a:hover {
   background-image: url("images/landing_page.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Styling the Stories section */
@@ -86,6 +87,16 @@ p a:hover {
   background-color: #ffffff;
   box-shadow: 1px 1px 4px grey;
   z-index: 102; /* This ensures that the popup window is displayed on top of the other content */
+}
+
+/* Making the popup windows smaller when viewing the site on a smaller screen */
+@media only screen (max-width: 640px) {
+  .web_dialog {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80vw;
+  }
 }
 
 .web_dialog_title {
@@ -141,5 +152,5 @@ table a:hover {
 footer {
   padding: 10px 0;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
