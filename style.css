@@ -63,6 +63,12 @@ p a:hover {
   background-position: center;
 }
 
+/* Styling the nav bar */
+.navbar a, .nav a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 24px;
+}
+
 /* Styling the Stories section */
 .row img, .img-circle, .img-responsive {
   height: 200px;
@@ -153,4 +159,6 @@ footer {
   padding: 10px 0;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
+  background-color: black;
+  color: white;
 }
