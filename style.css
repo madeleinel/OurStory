@@ -77,18 +77,17 @@ body {
   margin: 5px 2px;
 }
 
-.fa {
+/*.fa {
   padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
   border: 50%;
-}
+}*/
 
 .fa-twitter {
   background-color: #55ACEE;
-  color: white;
 }
 
 #googledoc {
