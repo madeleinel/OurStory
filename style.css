@@ -114,10 +114,6 @@ table {
   font-size: 16px;
 }
 
-table td {
-  border-bottom: 1px solid white;
-}
-
 table a {
   color: black;
 }
@@ -170,12 +166,15 @@ footer {
     margin: 20px 0;
     text-align: center;
   }
-  .table {
-    padding: 5px;
+  .table .text-left {
+    text-align: left;
   }
-  /*.table h3 {
-    padding: 40px 80px;
-  }*/
+  .table {
+    padding: 20px;
+  }
+  .table h3 {
+    padding: 0 0 0 40px;
+  }
   .fa {
     margin: 0 5px 20px 5px;
   }
