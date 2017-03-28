@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nova+Oval" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   </head>
 
   <body>
 
     <header>
       <!-- Use this to style the landing page? http://getbootstrap.com/components/#jumbotron) -->
-      <div id="landingPage" class="jumbotron">
-        <h1 class="text-center" id="title">Our Story</h1>
+      <div id="landingPage" class="jumbotron text-center">
+        <h1 id="title">Our Story</h1>
+        <p id="quote">"In diversity, there is beauty and there is strength"<br/>Maya Angelou, <i>I Know Why the Caged Bird Sings</i></p>
       </div>
     </header>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Our Story</a>
@@ -34,7 +36,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#about">About us</a></li>
             <li class="active"><a href="#stories">Stories</a></li>
-            <li class="active"><a href="#facts">Facts</a></li>
+            <li class="active"><a href="#facts">Myths</a></li>
             <li class="active"><a href="#resources">Resources</a></li>
             <li class="active"><a href="#contact">Contact us</a></li>
           </ul>
@@ -45,72 +47,56 @@
     <div class="main">
 
       <div class="container text-center" id="about">
-        <h2 class="text-center">About Us</h2>
+        <h2>About Us</h2>
         <div class="row">
-          <p>Since the referendum on whether the UK should leave the EU last year. There has been a spike in hate crimes and xenophobic rhetoric in the UK, both in the mainstream media and else.</p>
+          <p>Since the referendum on whether the UK should leave the EU last year, there has been a spike in hate crimes and xenophobic rhetoric in the UK, both in the mainstream media and else.</p>
           <p>Our Story is a campaign that looks to shed positive light on immigration and why it’s so beneficial. We want to use the platform of the internet to share people’s experiences and reach a wider audience. Immigration is nothing new here in the UK and we believe everyone should be treated equally, regardless of their nationality, religion and social background.</p>
           <p>Each and every one of us contributes something meaningful to society. So make yourself comfortable and take a look here. I’m sure you will something that will move you. This is Our Story and we’re here to share everyone’s.</p>
-          <blockquote class="blockquote blockquote-reverse">
-            <p>In diversity, there is beauty and there is strength"</p>
-            <footer class="blockquote-footer">Maya Angelou, <cite>I Know Why the Caged Bird Sings"</cite></footer>
-          </blockquote>
         </div>
       </div> <!-- Closing the About div -->
 
       <div class="container" id="stories">
-        <h2 class="text-center">Stories</h2>
+        <h2 class="text-center">Immigrants' Stories</h2>
         <!-- Create a profile for each person, including their photo and their story -->
         <div class="row bg-success" id="firstStory">
           <img class="img-circle img-responsive pull-left" src="images/profile1.jpeg" />
-          <p>I remember my decision to migrate to the UK like yesterday. It was always the one decision I was always sure of. The main reason for the move was to pursue higher education. I was accepted to begin Biomedical Science at the University of Kent in the Fall of 2011. I unfortunately wasn’t instantly welcomed. I had missed the Fresher’s Week which made it hard for an introvert like myself to make friends. However, the town people were kind and I didn’t have any problems integrating into the society.  I thoroughly enjoyed my UK higher education experience.</p>
-          <p>After staying in the UK for more than 5 years, I have come to acclimatise to the culture and way of life here. I have grown to love it here after making lifelong friendships and I do sincerely feel like a member of the British public. Although the one downside to the move was that it became nearly impossible for an international individual like myself to come by any of great opportunities career wise. However, this did not deter me from my goals with the help of career advisors made available to me by my university, I am confident that I will be able to find a job. Overall, the critical decision to come to the United Kingdom and leave my home country behind was and will always be the best decision I have ever made. I am looking forward and anxious to see further how life in the UK will be for me. <i>Halima, Kenya</i></p>
+          <p class="text-right">I remember my decision to migrate to the UK like yesterday. It was always the one decision I was always sure of. The main reason for the move was to pursue higher education. I was accepted to begin Biomedical Science at the University of Kent in the Fall of 2011. I unfortunately wasn’t instantly welcomed. I had missed the Fresher’s Week which made it hard for an introvert like myself to make friends. However, the town people were kind and I didn’t have any problems integrating into the society.  I thoroughly enjoyed my UK higher education experience.</p>
+          <p class="text-right">After staying in the UK for more than 5 years, I have come to acclimatise to the culture and way of life here. I have grown to love it here after making lifelong friendships and I do sincerely feel like a member of the British public. Although the one downside to the move was that it became nearly impossible for an international individual like myself to come by any of great opportunities career wise. However, this did not deter me from my goals with the help of career advisors made available to me by my university, I am confident that I will be able to find a job. Overall, the critical decision to come to the United Kingdom and leave my home country behind was and will always be the best decision I have ever made. I am looking forward and anxious to see further how life in the UK will be for me. <i>Halima, Kenya</i></p>
         </div>
 
-        <div class="row bg-warning" id="secondStory">
+        <div class="row bg-success" id="secondStory">
           <img class="img-circle img-responsive pull-right" src="images/profile2.jpeg" />
-          <p>I first arrived in London in 1990, I was only 21 years old. I initially came here for a myriad of reasons but the most important one was to start afresh in England. Back then, things were easier. I felt welcomed here despite my different background. I’m not saying it was perfect in the 1990s but many of the attitudes that exist today certainly didn’t exist back then. I was lucky to arrive when I did, I received a lot of support and whilst it was difficult to adjust, I managed fine. People were friendly and wanted to help you. I wished to do the same and enrolled in nursing school. I met my husband whilst I was studying and gave birth to my eldest daughter in my final year of studies. I have had my fair share of racist incidents but I always felt like this wasn’t reflective of society as a whole because not everyone was like that.</p>
-          <p>But with the referendum, things have become increasingly toxic. Many of my colleagues are migrants, some EU and others non-EU. They work hard and pay their taxes. Like myself, they are saving lives here and yet do not get enough credit for it. I think it’s sad how the media paints migrants in such an ugly light. We are people too and now more than ever, despite having 4 children who were born and raised here, they aren’t British enough to some individuals. I think it is such a shame and I do think things will change and I am hopeful about this. <i>Yetunde, Nigeria</i></p>
+          <p class="text-left">I first arrived in London in 1990, I was only 21 years old. I initially came here for a myriad of reasons but the most important one was to start afresh in England. Back then, things were easier. I felt welcomed here despite my different background. I’m not saying it was perfect in the 1990s but many of the attitudes that exist today certainly didn’t exist back then. I was lucky to arrive when I did, I received a lot of support and whilst it was difficult to adjust, I managed fine. People were friendly and wanted to help you. I wished to do the same and enrolled in nursing school. I met my husband whilst I was studying and gave birth to my eldest daughter in my final year of studies. I have had my fair share of racist incidents but I always felt like this wasn’t reflective of society as a whole because not everyone was like that.</p>
+          <p class="text-left">But with the referendum, things have become increasingly toxic. Many of my colleagues are migrants, some EU and others non-EU. They work hard and pay their taxes. Like myself, they are saving lives here and yet do not get enough credit for it. I think it’s sad how the media paints migrants in such an ugly light. We are people too and now more than ever, despite having 4 children who were born and raised here, they aren’t British enough to some individuals. I think it is such a shame and I do think things will change and I am hopeful about this. <i>Yetunde, Nigeria</i></p>
         </div>
 
         <div class="row bg-success" id="thirdStory">
           <img class="img-circle img-responsive pull-left" src="images/profile3.jpeg" />
-          <p>I've lived in England for several years now, and I love it here! I moved here for work (I'm a teacher, and I found a great secondary school to work in) but within the first year I met my now-husband. I have a life here; a husband, a house, a job, friends.</p>
-          <p>But recently I asked the kids in my class to write an argumentative essay, either for or against immigration, and each and every one of them argumented against it. Reading them, it broke my heart that they have such negative views of immigrants, and that they felt comfortable handing those essays to me, when they know that I am one. <i>Toronto, Canada</i></p>
+          <p class="text-right">I've lived in England for several years now, and I love it here! I moved here for work (I'm a teacher, and I found a great secondary school to work in) but within the first year I met my now-husband. I have a life here; a husband, a house, a job, friends.</p>
+          <p class="text-right">But recently I asked the kids in my class to write an argumentative essay, either for or against immigration, and each and every one of them argumented against it. Reading them, it broke my heart that they have such negative views of immigrants, and that they felt comfortable handing those essays to me, when they know that I am one. <i>Toronto, Canada</i></p>
         </div>
 
-        <div class="row bg-warning" id="fourthStory">
+        <div class="row bg-success" id="fourthStory">
           <img class="img-circle img-responsive pull-right" src="images/profile4.jpeg" />
-          <p>I moved to London five years ago, and during that time I have started and finished a university degree, and worked three different jobs. I love living in London, but I wish it wasn’t so expensive! I had to work part-time throughout my degree to be able to afford it, and that was after getting a student loan!</p>
-          <p>It really frustrates me when people talk about how immigrant come into this country just to claim benefits and “loaf” off of the British people; during my time here I have paid huge sums in tuition (that I have loaned from my own government), worked and paid taxes, and been to my GP twice — I really feel that I’m contributing a lot more to the community than I am taking from it. <i>Stockholm, Sweden</i></p>
+          <p class="text-left">I moved to London five years ago, and during that time I have started and finished a university degree, and worked three different jobs. I love living in London, but I wish it wasn’t so expensive! I had to work part-time throughout my degree to be able to afford it, and that was after getting a student loan!</p>
+          <p class="text-left">It really frustrates me when people talk about how immigrant come into this country just to claim benefits and “loaf” off of the British people; during my time here I have paid huge sums in tuition (that I have loaned from my own government), worked and paid taxes, and been to my GP twice — I really feel that I’m contributing a lot more to the community than I am taking from it. <i>Stockholm, Sweden</i></p>
         </div>
       </div> <!-- Closing the Stories div -->
 
       <div class="container text-center" id="facts">
-        <h2 class="text-center">Common myths de-mystified</h2>
+        <h2 class="text-center">Common Myths</h2>
 
-        <div class="row bg-success" id="firstFact">
-          <p class="perception">Immigration is the main reason the NHS is in shambles; they put a lot of pressure on it as they come over here and use up its resources.</p>
+        <div class="row" id="firstFact">
+          <p>Immigration is the main reason the NHS is in shambles;</br>they put a lot of pressure on it as they come over here and use up its resources.</p>
           <!-- Each "fact" has TRUE / FALSE buttons > The button id's indicate whether it's the correct choice or not -->
-          <button type="button" class="btn btn-block btn-success choice incorrect" id="btn-first">True</button>
-          <button type="button" class="btn btn-block btn-danger choice correct" id="btn-first">False</button>
+          <button type="button" class="btn btn-success choice incorrect" id="btn-first">True</button>
+          <button type="button" class="btn btn-danger choice correct" id="btn-first">False</button>
         </div>
 
-        <div class="row bg-warning" id="secondFact">
-          <p class="perception">UK prisons are filling up with foreigners; soon there will be more foreigners than UK citizens in our prisons.</p>
-          <button type="button" class="btn btn-block btn-success choice incorrect" id="btn-second">True</button>
-          <button type="button" class="btn btn-block btn-danger choice correct" id="btn-second">False</button>
-        </div>
-
-        <div class="row bg-success" id="thirdFact">
-          <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-          <button type="button" class="btn btn-block btn-success choice correct" id="btn-third">True</button>
-          <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-third">False</button>
-        </div>
-
-        <div class="row bg-warning" id="fourthFact">
-          <p class="perception">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis.</p>
-          <button type="button" class="btn btn-block btn-success choice correct" id="btn-fourth">True</button>
-          <button type="button" class="btn btn-block btn-danger choice incorrect" id="btn-fourth">False</button>
+        <div class="row" id="secondFact">
+          <p>UK prisons are filling up with foreigners;</br>soon there will be more foreigners than UK citizens in our prisons.</p>
+          <button type="button" class="btn btn-success choice incorrect" id="btn-second">True</button>
+          <button type="button" class="btn btn-danger choice correct" id="btn-second">False</button>
         </div>
 
         <!-- Create a pop-up window to display after the user clicks on true or False -->
@@ -126,56 +112,28 @@
             <p>Currently, about one in eight prisoners in England and Wales is a foreign citizen, and this percentage has been falling over the last few years.</p>
             <p><small>Source: <a href="https://fullfact.org/immigration/foreigners-prison/" target="_blank">Full Fact</a></small></p>
           </div>
-          <div class="fact_popup" id="third">
-            <p>More info about the third fact.</p>
-            <p><small>Source: <a href="" target="_blank">Source</a></small></p>
-          </div>
-          <div class="fact_popup" id="fourth">
-            <p>More info about the fourth fact.</p>
-            <p><small>Source: <a href="" target="_blank">Source</a></small></p>
-          </div>
 
           <div class="web_dialog_title">
-            <button type="button" class="btn btn-close btn-warning">Close</button>
+            <button type="button" class="btn btn-close">Close</button>
           </div>
         </div> <!-- Done setting up the pop-up window -->
 
       </div> <!-- Closing the Facts div -->
 
-      <div class="container" id="resources">
-        <h2 class="text-center">Resources</h2>
+      <div class="container text-center" id="resources">
+        <h2>Resources</h2>
         <div class="row">
-         <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-         <table class="table table-responsive bg-success" id="information">
+         <p class="text-center">Visit these websites to find out more about immigration in the UK, and to find organisations you can get involved with.</p>
+         <h3>Websites with more information</h3>
+         <p><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/migrationstatisticsquarterlyreport/dec2016">Office for National Statistics</a></p>
+         <p><a href="http://www.migrationobservatory.ox.ac.uk/resources/briefings/migrants-in-the-uk-an-overview/">Migrants in the UK: An Overview</a></p>
+         <h3>Some interesting articles</h3>
+         <p><a href="https://www.google.co.uk/amp/s/amp.theguardian.com/uk-news/2017/mar/01/britain-one-of-worst-places-western-europe-asylum-seekers">Britain is one of the worst places in Europe for asylum seekers in the UK (The Guardian, 2017)</a></p>
+         <p><a href="http://www.telegraph.co.uk/news/uknews/immigration/10570839/Immigration-has-a-positive-impact-says-Office-for-Budget-Responsibility-head.html">The positive impact of immigration in the UK (The Telegraph, 2016)</a></p>
+         <p><a href="http://www.independent.co.uk/news/uk/home-news/eu-immigration-has-no-negative-impact-on-british-wages-jobs-or-public-services-research-finds-a7026796.html">EU immigration has no negative impact on British wages, jobs or public services, LSE research finds (The Independent, 2016)</a></p>
+         <h3>Local organisations to get involved with</h3>
+         <table class="table table-responsive text-left">
            <thead>
-             <tr>
-               <th colspan="3" class="text-center">More information</th>
-             </tr>
-             <tr>
-               <th>Statistics</th>
-               <th>Some reading</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <td><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/migrationstatisticsquarterlyreport/dec2016">Office for National Statistics</a></td>
-               <td><a href="https://www.google.co.uk/amp/s/amp.theguardian.com/uk-news/2017/mar/01/britain-one-of-worst-places-western-europe-asylum-seekers"> Britain is one of the worst places in Europe for asylum seekers in the UK, The Guardian (February, 2017)</a></td>
-             </tr>
-             <tr>
-               <td><a href="http://www.migrationobservatory.ox.ac.uk/resources/briefings/migrants-in-the-uk-an-overview/">Migrants in the UK: An Overview</a></td>
-               <td><a href="http://www.telegraph.co.uk/news/uknews/immigration/10570839/Immigration-has-a-positive-impact-says-Office-for-Budget-Responsibility-head.html">The positive impact of immigration in the UK, (The Telegraph, 2016)</a></td>
-             </tr>
-             <tr>
-               <td></td>
-               <td><a href="http://www.independent.co.uk/news/uk/home-news/eu-immigration-has-no-negative-impact-on-british-wages-jobs-or-public-services-research-finds-a7026796.html">EU immigration has no negative impact on British wages, jobs or public services, LSE research finds, (The Independent, 2016)</a></td>
-             </tr>
-           </tbody>
-         </table>
-         <table class="table table-responsive bg-warning" id="organisations">
-           <thead>
-             <tr>
-               <th colspan="4" class="text-center">Local organisations to get involved with</th>
-             </tr>
              <tr>
                <th>London</th>
                <th colspan="2">Midlands & North of England</th>
@@ -202,7 +160,7 @@
                <td></td>
              </tr>
              <tr>
-               <td><a href="http://www.gdwg.org.uk/">Gatwick Detainees Welfare Grou</a></td>
+               <td><a href="http://www.gdwg.org.uk/">Gatwick Detainees Welfare Group</a></td>
                <td><a href="http://www.nottsrefugeeforum.org.uk/">Nottingham and Nottinghamshire Refugee Forum</a></td>
                <td><a href="https://www.refugeevoices.org.uk"> Regional Refugee Forum North East</a></td>
                <td></td>
@@ -213,25 +171,24 @@
       </div> <!-- Closing the Resources div -->
 
       <div class="container" id="contact">
-        <h2 class="text-center">Contact</h2>
+        <h2 class="text-center">Contact Us</h2>
         <div class="row">
           <h3 class="text-center">Follow us on social media!</h3>
-          <div class="icons">
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-snapchat"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
+          <div class="icons text-center">
+            <a href="https://instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://snapchat.com/" target="_blank" class="fa fa-snapchat"></a>
+            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://google.com/" target="_blank" class="fa fa-google"></a>
           </div>
-          <!-- Create a contact form (http://getbootstrap.com/components/#navbar-forms) -->
-          <div id="googledoc">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfANqmqlKwqRoFKh7GarX_dd_F5eleG-KVfjJzWNAbArs-Omw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-          </div>
+        </div>
+        <div class="row" id="googledoc">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfANqmqlKwqRoFKh7GarX_dd_F5eleG-KVfjJzWNAbArs-Omw/viewform?embedded=true" height="500" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
       </div> <!-- Closing the Contact div -->
 
     </div> <!-- Closing the Main tag -->
 
-    <footer class="container text-center bg-warning">
+    <footer class="container text-center">
       This page was created by Elizabeth Jegede and Madeleine Linder
     </footer>
 

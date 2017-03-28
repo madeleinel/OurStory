@@ -39,12 +39,4 @@ $(document).ready(function showPopups() {
     $(".fact_popup").hide();
     $("#second_fact").show();
   })
-  $("#btn-third").click(function() {
-    $(".fact_popup").hide();
-    $("#third").show();
-  })
-  $("#btn-fourth").click(function() {
-    $(".fact_popup").hide();
-    $("#fourth").show();
-  })
 });
