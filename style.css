@@ -108,6 +108,10 @@ p a:hover {
   text-decoration: underline;
 }
 
+.table {
+  background-color: #dff0d8;
+}
+
 table {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 16px;
@@ -170,6 +174,7 @@ footer {
   }
   .table {
     padding: 5px;
+    background-color: white;
   }
   .table h3 {
     padding: 0 0 0 40px;
